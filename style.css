@@ -1,0 +1,13 @@
+body{
+background-color:rgb(0, 139, 139);
+}
+.container{
+    text-align: center;
+    
+}
+
+.box{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(240, 248, 255);
+}

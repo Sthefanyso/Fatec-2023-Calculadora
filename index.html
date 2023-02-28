@@ -5,20 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
-    <style>
-    body{
-        background-color: #DC143C
-        ;
-    } 
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
+
+    <div class="container">
+    <div class="box">
+        
     <h1>Calculadora Básica</h1>
     <form>
         <input type="text" id="num1">
-        +
+        
         <input type="text" id="num2">
+
+        <!-- botões -->
         <button type="button" onclick="somar()">Somar</button>
+        <button type="button" onclick="subtrair()">Subtrair</button>
+        <button type="button" onclick="dividir()">Dividir</button>
+        <button type="button" onclick="multiplicar()">Multiplicar</button>
+
+        <!-- botões -->
         <input type="text" id="resp" readonly>
         <script>
             function somar (){
@@ -31,7 +36,36 @@
                 parseFloat(document.getElementById("resp").value = resp);
             }
 
+            function subtrair(){
+                
+                num1 = parseFloat(document .getElementById("num1").value);
+                num2 = parseFloat(document .getElementById("num2").value);
+
+                resp = num1 - num2;
+                parseFloat(document.getElementById("resp").value = resp);
+            }
+
+            function dividir(){
+                
+                num1 = parseFloat(document .getElementById("num1").value);
+                num2 = parseFloat(document .getElementById("num2").value);
+
+                resp = num1 / num2;
+                parseFloat(document.getElementById("resp").value = resp);
+            }
+
+            function multiplicar(){
+                
+                num1 = parseFloat(document .getElementById("num1").value);
+                num2 = parseFloat(document .getElementById("num2").value);
+
+                resp = num1 * num2;
+                parseFloat(document.getElementById("resp").value = resp);
+            }
+        
         </script>
     </form>
+    </div>
+    </div>
 </body>
 </html>
