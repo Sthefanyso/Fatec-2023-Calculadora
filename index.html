@@ -13,18 +13,23 @@
         
     <h1>Calculadora Básica</h1>
     <form>
-        <input type="text" id="num1">
-        
-        <input type="text" id="num2">
+
+        <div class="entradas">
+        <input type="text" id="num1" class="input">
+        <input type="text" id="num2" class="input"><br><br>
+        </div>
 
         <!-- botões -->
-        <button type="button" onclick="somar()">Somar</button>
-        <button type="button" onclick="subtrair()">Subtrair</button>
-        <button type="button" onclick="dividir()">Dividir</button>
-        <button type="button" onclick="multiplicar()">Multiplicar</button>
-
+        <button type="button" class="btnsomar" onclick="somar()">Somar</button>
+        <button type="button" class="btnsubtrair" onclick="subtrair()">Subtrair</button><br>
+        <button type="button" class="btndividir" onclick="dividir()">Dividir</button>
+        <button type="button" class="btnmulti" onclick="multiplicar()">Multiplicar</button>
+        <button type="button" class="btnnew">New</button><br><br><br>
+        <button type="button" class="btnlimpa" onclick="limpar()">Limpar</button><br><br><br>
         <!-- botões -->
-        <input type="text" id="resp" readonly>
+        <div clas="saída">
+        <input type="text" id="resp" class="input" readonly>
+        </div>
         <script>
             function somar (){
                 var num1,num2, resp;
@@ -61,6 +66,12 @@
 
                 resp = num1 * num2;
                 parseFloat(document.getElementById("resp").value = resp);
+            }
+            
+            function limpar(){
+            document.getElementById("num1").value = '';
+            document.getElementById("num2").value = '';
+            document.getElementById("resp").value = '';
             }
         
         </script>

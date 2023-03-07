@@ -1,13 +1,110 @@
 body{
-background-color:rgb(0, 139, 139);
+background-color:#00BFFF;
 }
 .container{
     text-align: center;
-    
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .box{
-    width: 300px;
-    height: 300px;
+    width: 500px;
+    height: 500px;
     background-color: rgb(240, 248, 255);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #00BFFF;
+    height: 5px;
+    padding: 50px;
+}
+
+div.entradas{
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+
+input{
+    border: 2px solid #00BFFF;
+    border-radius: 4px;
+    width: 75px;
+    height: 25px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.btnsomar{
+    background-color:#fff;
+    color: #00BFFF;
+    border: 2px solid #00BFFF;
+    border-radius: 4px;
+    font-size: 20px;
+    padding: 5px 8px;
+    margin-right: 1px;
+    margin-left: 20px;
+    
+}
+
+.btnsubtrair{
+    background-color:#fff;
+    color: #00BFFF;
+    border: 2px solid #00BFFF;
+    border-radius: 4px;
+    font-size: 20px;
+    padding: 5px 8px;
+   
+}
+
+.btnlimpa{
+    background-color:#fff;
+    color: #00BFFF;
+    border: 2px solid #00BFFF;
+    border-radius: 4px;
+    font-size: 20px;
+    padding: 5px 8px;
+   
+}
+
+.btndividir{
+    background-color:#fff;
+    color: #00BFFF;
+    border: 2px solid #00BFFF;
+    border-radius: 4px;
+    font-size: 20px;
+    padding: 5px 8px;
+    margin-top: 15px;
+    margin-right: 1px;
+    margin-left: 15px;
+
+}
+
+.btnmulti{
+    background-color:#fff;
+    color: #00BFFF;
+    border: 2px solid #00BFFF;
+    border-radius: 4px;
+    font-size: 20px;
+    padding: 5px 8px;
+   
+}
+
+.btnnew{
+    background-color:#fff;
+    color: #00BFFF;
+    border: 2px solid #00BFFF;
+    border-radius: 4px;
+    font-size: 20px;
+    padding: 5px 8px;
+   
 }
