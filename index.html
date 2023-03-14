@@ -24,10 +24,10 @@
         <button type="button" class="btnsubtrair" onclick="subtrair()">Subtrair</button><br>
         <button type="button" class="btndividir" onclick="dividir()">Dividir</button>
         <button type="button" class="btnmulti" onclick="multiplicar()">Multiplicar</button>
-        <button type="button" class="btnnew">New</button><br><br><br>
         <button type="button" class="btnlimpa" onclick="limpar()">Limpar</button><br><br><br>
         <!-- botões -->
-        <div clas="saída">
+        <div class="saída">
+        <label style="color:#00BFFF"><strong>Resultado: </strong></label>
         <input type="text" id="resp" class="input" readonly>
         </div>
         <script>
@@ -67,7 +67,7 @@
                 resp = num1 * num2;
                 parseFloat(document.getElementById("resp").value = resp);
             }
-            
+
             function limpar(){
             document.getElementById("num1").value = '';
             document.getElementById("num2").value = '';
